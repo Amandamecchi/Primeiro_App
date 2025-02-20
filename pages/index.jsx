@@ -1,37 +1,27 @@
-import styles from "../styles/Home.module.css"
+import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 
 export default function Home() {
     return (
         <div className={styles.container}>
-<Header />
+            <Header />
             <main className={styles.main}>
+                <section className={styles.cardsContainer}>
+                    <div className={styles.card}>usrinho</div>
+                    <div className={styles.card}>usrinho</div>
+                    <div className={styles.card}>usrinho</div>
+                </section>
 
+                <aside className={styles.imageContainer}>
+                    <img className={styles.bearImage} 
+                         src="/cloudBear.jpg" 
+                         alt="Urso grande" />
+                </aside>
             </main>
 
-            <div className={styles.article}>
-                <div className={styles.box1}>
-                    <h1>1</h1>
-                </div>
-
-                <div className={styles.box2}>
-                    <h1>2</h1>
-                </div>
-
-                <div className={styles.box3}>
-                    <h1>3</h1>
-                </div>
-
-            </div>
-
-            <div className={styles.footer}>
-                <h3>footer</h3>
-            </div>
-
-            <div className={styles.imagem}>
-            <img className={styles.cloud} src="/CloudBear.jpg" alt="urso" />
-            </div>
+            <footer className={styles.footer}>
+                <p>© 2025 Amanda - Todos os direitos reservados</p>
+            </footer>
         </div>
-
     );
 }
