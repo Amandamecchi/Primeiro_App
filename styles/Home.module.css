@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 1rem;
     position: relative;
 }
 
@@ -32,20 +32,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
+    padding: 1rem;
+    gap: 2rem; /*!!!!!!!!! não é spacealine*/
 }
 
 .cardsContainer {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     width: 60%;
-    margin-right: 5%;
 }
 
 .card {
     background-color: #71a5c0;
-    color: rgb(250, 250, 250);
+    color: #ffffff;
     padding: 5rem;
     border-radius: 10px;
     text-align: center;
@@ -59,12 +59,13 @@
     background-color: #dbeef7;
     padding: 2rem;
     border-radius: 30px;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bearImage {
-    width: 350px;
+    width: 250px;
     height: auto;
 }
 
@@ -83,10 +84,57 @@
     
     .main{
         flex-direction: column;
-        align-items: center;
     }
 
-    .card{
+    .cardsContainer{
+        width: 90%;
+    }
 
+    .bearImage{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        padding: 1rem;
+    }
+    .header{
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+    .header h1{
+        font-size: 1.5rem;
+    }
+    .logo{
+        width: 60px;
+        right: 0;
+        top: 0;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    .cardsContainer{
+        width: 100%;
+        margin: 0;
+        gap: 1rem;
+    }
+    .card{
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    .imageContainer{
+        padding: 1rem;
+        border-radius: 15px;
+    }
+    .bearImage{
+        width: 200px;
+    }
+    .footer{
+        font-size: 0.8rem;
+        padding: 0.8rem;
     }
 }
